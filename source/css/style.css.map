@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.less","style.css"],"names":[],"mappings":"AAAA;EAAO,iBAAA;ACEP","file":"style.css","sourcesContent":["body { background:white; }\n","body {\n  background: white;\n}\n"]}
