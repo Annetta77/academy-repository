@@ -15,6 +15,14 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
+
+    @media (min-width: @tablet-width) {
+
+      display: grid;
+
+
+    };
+
   }
 
   &__index {
@@ -27,20 +35,23 @@
 
   &__cost {
     font-family: Oswald;
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
-color: #000000;
-
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
   }
 
-  &__btn, &__btn--active {
-
+  &__btn,
+  &__btn--active {
     font-family: Oswald;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
 
+  @media (min-width: @desctop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

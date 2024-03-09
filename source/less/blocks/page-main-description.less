@@ -11,5 +11,24 @@
   &__list {
     list-style: none;
     list-style-type: none;
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @media (min-width: @desctop-width) {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    @media (min-width: @tablet-width) {
+      width: 280px;
+      margin-bottom: 37px;
+    }
   }
 }
