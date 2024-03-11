@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CAT ENERGY</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
@@ -190,15 +190,18 @@
             </dl>
             <button class="catalog-card__button order-btn">заказать</button>
           </li>
+          <li
+            class="catalog-card catalog-main__other other catalog-main-list__item catalog-main-list__card"
+          >
+            <p class="catalog-main__more">Показать еще 100500 товаров</p>
+            <p>На самом деле вкусов гораздо больше!</p>
+            <button class="catalog-main__other-btn">показать все</button>
+          </li>
         </ul>
-        <article class="catalog-main__other other">
-          <p class="catalog-main__more">Показать еще 100500 товаров</p>
-          <p>На самом деле вкусов гораздо больше!</p>
-          <button class="catalog-main__other-btn">показать все</button>
-        </article>
       </section>
       <section class="catalog-main__additional additional">
-        <h2 class="additional__title">Дополнительные товары</h2>
+       <div class="additional__container">
+         <h2 class="additional__title">Дополнительные товары</h2>
         <ul class="additional__list">
           <li class="additional__item additional-item">
             <h3 class="additional-item__title">Сахарозаменитель</h3>
@@ -233,10 +236,11 @@
             <button class="additional-item__btn order-btn">заказать</button>
           </li>
         </ul>
+        <article class="catalog-main__gift-promo">
+          <p>Закажите все и получите чехол для кота в подарок!</p>
+        </article>
+      </div>
       </section>
-      <article class="catalog-main__gift-promo">
-        <p>Закажите все и получите чехол для кота в подарок!</p>
-      </article>
     </main>
     <footer class="page__footer page-footer">
       <div class="page-footer__contacts page-footer-contacts">
@@ -265,13 +269,19 @@
 
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="#"><span class="visually-hidden">вконтакте</span></a>
+            <a class="social-list__link" href="#"
+              ><span class="visually-hidden">вконтакте</span></a
+            >
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#"><span class="visually-hidden">YouTube</span></a>
+            <a class="social-list__link" href="#"
+              ><span class="visually-hidden">YouTube</span></a
+            >
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#"><span class="visually-hidden">Телеграм</span></a>
+            <a class="social-list__link" href="#"
+              ><span class="visually-hidden">Телеграм</span></a
+            >
           </li>
         </ul>
         <p><a class="page-footer__developer-link" href="#">HTML Academy</a></p>

@@ -1,41 +1,61 @@
 .field-group {
+  &__container {
+    @media (min-width: @desctop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__more-list {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
+
+      @media (min-width: @desctop-width) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+    }
+  }
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
- color: #444444;
+  color: #444444;
 
   &__list {
     list-style: none;
     list-style-type: none;
     font-family: Oswald;
-font-size: 16px;
-font-weight: 400;
-line-height: 18px;
-color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #444444;
+  }
 
+  &__list-contacts {
+    @media (min-width: @desctop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__heading {
-
     font-family: Oswald;
-font-size: 24px;
-font-weight: 400;
-line-height: 26px;
-color: #000000;
-text-transform: none;
-
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #000000;
+    text-transform: none;
   }
 
   &__more {
-
     font-family: Oswald;
-font-size: 24px;
-font-weight: 400;
-line-height: 26px;
-text-transform: none;
-color: #000000;
-
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: none;
+    color: #000000;
   }
 }

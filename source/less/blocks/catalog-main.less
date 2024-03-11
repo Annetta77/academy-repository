@@ -1,6 +1,11 @@
 .catalog-main {
+
+  @media (min-width: @desctop-width) {
+    width: 1221px;
+  }
   &__catalog {
     margin-bottom: 25px;
+
   }
 
   &__gift-promo {
@@ -25,7 +30,20 @@
   &__list {
     list-style: none;
     list-style-type: none;
-  }
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 324px);
+      gap: 60px;
+
+          }
+          @media (min-width: @desctop-width) {
+            display: grid;
+            grid-template-columns: repeat(4, 245px);
+            row-gap: 80px;
+            column-gap: 63px;
+
+                }
+        }
 
   &__other {
     font-family: Arial;

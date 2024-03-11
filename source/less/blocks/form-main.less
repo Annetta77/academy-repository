@@ -6,6 +6,20 @@
   color: #000000;
   text-transform: uppercase;
 
+  @media (min-width: @tablet-width) {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  @media (min-width: @desctop-width) {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
   &__title {
     font-family: Oswald;
     font-size: 36px;

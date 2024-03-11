@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CAT ENERGY</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
@@ -52,94 +52,96 @@
           method="post"
           action="https://echo.htmlacademy.ru/"
         >
-          <fieldset class="form__group field-group">
-            <legend class="visually-hidden">Данные кота</legend>
+          <div class="field-group__container">
+            <fieldset class="form__group field-group">
+              <legend class="visually-hidden">Данные кота</legend>
 
-            <ul class="field-group__list">
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__lead">Имя:*</span>
-                  <input
-                    class="field__input"
-                    name="cat-name"
-                    type="text"
-                    placeholder="Барсик"
-                    required
-                  />
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__lead">Вес (кг):*</span>
-                  <input
-                    class="field__input"
-                    name="cat-weight"
-                    type="text"
-                    placeholder="7"
-                    required
-                  />
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="field">
-                  <span class="field__lead">Возраст (лет):</span>
-                  <input
-                    class="field__input"
-                    name="cat-age"
-                    type="text"
-                    placeholder="7"
-                  />
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+              <ul class="field-group__list">
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">Имя:*</span>
+                    <input
+                      class="field__input"
+                      name="cat-name"
+                      type="text"
+                      placeholder="Барсик"
+                      required
+                    />
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">Вес (кг):*</span>
+                    <input
+                      class="field__input"
+                      name="cat-weight"
+                      type="text"
+                      placeholder="7"
+                      required
+                    />
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">Возраст (лет):</span>
+                    <input
+                      class="field__input"
+                      name="cat-age"
+                      type="text"
+                      placeholder="7"
+                    />
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="form__group field-group">
-            <legend class="visually-hidden">Цель программы</legend>
+            <fieldset class="form__group field-group">
+              <legend class="visually-hidden">Цель программы</legend>
 
-            <ul class="field-group__list">
-              <li class="field-group__item">
-                <label class="control control--radio">
-                  <input
-                    class="control__input"
-                    name="target"
-                    type="radio"
-                    value="fit"
-                  />
-                  <span class="control__lead">Похудение</span>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="control control--radio">
-                  <input
-                    class="control__input"
-                    name="target"
-                    type="radio"
-                    value="fitness"
-                  />
-                  <span class="control__lead">Набор массы</span>
-                </label>
-              </li>
-              <li class="field-group__item">
-                <label class="control control--radio">
-                  <input
-                    class="control__input"
-                    name="target"
-                    type="radio"
-                    value="advice"
-                  />
-                  <span class="control__lead">Не знаю (нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+              <ul class="field-group__list">
+                <li class="field-group__item">
+                  <label class="control control--radio">
+                    <input
+                      class="control__input"
+                      name="target"
+                      type="radio"
+                      value="fit"
+                    />
+                    <span class="control__lead">Похудение</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--radio">
+                    <input
+                      class="control__input"
+                      name="target"
+                      type="radio"
+                      value="fitness"
+                    />
+                    <span class="control__lead">Набор массы</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--radio">
+                    <input
+                      class="control__input"
+                      name="target"
+                      type="radio"
+                      value="advice"
+                    />
+                    <span class="control__lead">Не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="form__group field-group">
             <legend class="field-group__heading">
               Контактные данные (владельца кота)
             </legend>
 
-            <ul class="field-group__list">
+            <ul class="field-group__list field-group__list-contacts">
               <li class="field-group__item">
                 <label class="field">
                   <span class="field__lead">E-mail:*</span>
@@ -186,7 +188,7 @@
           <fieldset class="form__group field-group">
             <legend class="field-group__more">Дополнительно</legend>
 
-            <ul class="field-group__list">
+            <ul class="field-group__list field-group__more-list">
               <li class="field-group__item">
                 <label class="control control--checkbox">
                   <input
@@ -270,13 +272,19 @@
 
         <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="#"><span class="visually-hidden">вконтакте</span></a>
+            <a class="social-list__link" href="#"
+              ><span class="visually-hidden">вконтакте</span></a
+            >
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#"><span class="visually-hidden">YouTube</span></a>
+            <a class="social-list__link" href="#"
+              ><span class="visually-hidden">YouTube</span></a
+            >
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#"><span class="visually-hidden">Телеграм</span></a>
+            <a class="social-list__link" href="#"
+              ><span class="visually-hidden">Телеграм</span></a
+            >
           </li>
         </ul>
         <p><a class="page-footer__developer-link" href="#">HTML Academy</a></p>
