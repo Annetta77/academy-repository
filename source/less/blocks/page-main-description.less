@@ -1,16 +1,27 @@
 .page-main-description {
+  padding: 0;
+  margin: 0;
+
   margin-bottom: 49px;
+  width: 320px;
+  height: 380px;
   &__title {
     font-family: Oswald;
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
     color: #000000;
+    margin-bottom: 40px;
   }
 
   &__list {
     list-style: none;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
     @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -18,7 +29,6 @@
     }
 
     @media (min-width: @desctop-width) {
-
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -26,9 +36,87 @@
   }
 
   &__item {
+    width: 320px;
+
+    margin-bottom: 20px;
+
+    &--leaf {
+      width: 176px;
+      height: 54px;
+      margin-left: 40px;
+
+      &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        display: block;
+        background-image: url("./../img/Group-1.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+       left: 0;
+      }
+    }
+
+    &--powder {
+      width: 198px;
+      height: 54px;
+      margin-left: 40px;
+
+
+      &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        display: block;
+        background-image: url("./../img/Group-2.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    &--nutrition {
+      width: 183px;
+      height: 54px;
+      margin-left: 40px;
+
+
+      &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        display: block;
+        background-image: url("./../img/Group-3.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0
+        ;
+      }
+    }
+
+    &--changes {
+      width: 199px;
+      height: 54px;
+      margin-left: 40px;
+
+
+      &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        display: block;
+        background-image: url("./../img/Group-4.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+      }
+      margin-bottom: 0;
+    }
+
     @media (min-width: @tablet-width) {
       width: 280px;
       margin-bottom: 37px;
+      position: relative;
     }
   }
 }

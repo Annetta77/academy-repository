@@ -40,6 +40,9 @@
 .page-main {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 .page-main__promo-img {
@@ -51,6 +54,10 @@
   margin: 0;
   padding: 0;
   padding-top: 20px;
+}
+.page-main__description {
+  width: 380px;
+  height: 380px;
 }
 .page-main__title {
   font-family: "oswald", sans-serif;
@@ -391,6 +398,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.page-header {
+  min-width: 280px;
+}
 .page-header__nav-cont {
   display: flex;
   justify-content: space-between;
@@ -454,6 +464,9 @@
 }
 .page-main-catalog {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .page-main-catalog__title {
   font-family: Oswald;
@@ -463,6 +476,12 @@
   color: #000000;
   text-align: left;
   text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 91px;
+  margin-bottom: 29px;
 }
 .page-main-catalog__link {
   font-family: Oswald;
@@ -473,10 +492,40 @@
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
+  position: relative;
+}
+.page-main-catalog__link::after {
+  content: "";
+  width: 32px;
+  height: 12px;
+  display: block;
+  background-image: url("../img/icon_arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 100px;
+  bottom: 5px;
 }
 .page-main-catalog__slim {
+  min-width: 320px;
+  height: 266px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 22px;
+  position: relative;
   margin-bottom: 20px;
   background-color: #f2f2f2;
+}
+.page-main-catalog__slim::before {
+  content: "";
+  width: 50px;
+  height: 53px;
+  display: inline-block;
+  background-image: url("../img/cat_slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 7px 22px 0;
+  position: absolute;
+  top: 21px;
 }
 @media (min-width: 768px) {
   .page-main-catalog__slim {
@@ -490,7 +539,24 @@
   }
 }
 .page-main-catalog__pro {
+  width: 280px;
+  height: 266px;
+  min-width: 320px;
+  padding-top: 20px;
+  padding-left: 22px;
+  position: relative;
   background-color: #f2f2f2;
+}
+.page-main-catalog__pro::before {
+  content: "";
+  width: 67px;
+  height: 50px;
+  display: inline-block;
+  background-image: url("../img/cat_pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 7px 22px 0;
+  position: absolute;
 }
 @media (min-width: 768px) {
   .page-main-catalog__pro {
@@ -511,8 +577,31 @@
     flex-wrap: nowrap;
   }
 }
+.page-main-catalog__description {
+  width: 227px;
+  height: 90px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+  position: relative;
+  display: block;
+  margin-bottom: 38px;
+}
+.page-main-catalog__description::after {
+  content: "";
+  background: #D9D9D9;
+  width: 240px;
+  height: 1px;
+  bottom: -20px;
+  left: 0;
+  position: absolute;
+}
 .page-main-description {
+  padding: 0;
+  margin: 0;
   margin-bottom: 49px;
+  width: 320px;
+  height: 380px;
 }
 .page-main-description__title {
   font-family: Oswald;
@@ -520,10 +609,14 @@
   font-weight: 400;
   line-height: 40px;
   color: #000000;
+  margin-bottom: 40px;
 }
 .page-main-description__list {
   list-style: none;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 @media (min-width: 768px) {
   .page-main-description__list {
@@ -539,10 +632,77 @@
     justify-content: space-around;
   }
 }
+.page-main-description__item {
+  width: 320px;
+  margin-bottom: 20px;
+}
+.page-main-description__item--leaf {
+  width: 176px;
+  height: 54px;
+  margin-left: 40px;
+}
+.page-main-description__item--leaf::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-image: url("../img/Group-1.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
+.page-main-description__item--powder {
+  width: 198px;
+  height: 54px;
+  margin-left: 40px;
+}
+.page-main-description__item--powder::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-image: url("../img/Group-2.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
+.page-main-description__item--nutrition {
+  width: 183px;
+  height: 54px;
+  margin-left: 40px;
+}
+.page-main-description__item--nutrition::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-image: url("../img/Group-3.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0
+        ;
+}
+.page-main-description__item--changes {
+  width: 199px;
+  height: 54px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+.page-main-description__item--changes::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-image: url("../img/Group-4.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
 @media (min-width: 768px) {
   .page-main-description__item {
     width: 280px;
     margin-bottom: 37px;
+    position: relative;
   }
 }
 .page-main-example {

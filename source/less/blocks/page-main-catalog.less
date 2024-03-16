@@ -1,5 +1,9 @@
 .page-main-catalog {
   margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 
 
   &__title {
@@ -10,6 +14,15 @@
     color: #000000;
     text-align: left;
     text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 91px;
+    margin-bottom: 29px;
+
+
+
   }
 
   &__link {
@@ -21,9 +34,44 @@
     text-decoration: none;
     color: #000000;
     text-transform: uppercase;
+    position: relative;
+
+
+    &::after {
+      content: "";
+      width: 32px;
+      height: 12px;
+      display: block;
+      background-image: url("./../img/icon_arrow.svg");
+      background-repeat: no-repeat;
+
+      position: absolute;
+      left: 100px;
+      bottom: 5px;
+
+
+    }
   }
 
   &__slim {
+min-width: 320px;
+height: 266px;
+margin-top: 20px;
+padding-top: 20px;
+padding-left: 22px;
+position: relative;
+   &::before {
+    content: "";
+    width: 50px;
+    height: 53px;
+    display:inline-block;
+    background-image: url("./../img/cat_slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 7px 22px 0;
+position: absolute;
+top: 21px;
+   }
     margin-bottom: 20px;
     background-color: #f2f2f2;
 
@@ -38,6 +86,25 @@
   }
 
   &__pro {
+    width: 280px;
+    height: 266px;
+    min-width: 320px;
+    padding-top: 20px;
+    padding-left: 22px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 67px;
+      height: 50px;
+      display:inline-block;
+      background-image: url("./../img/cat_pro.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0 7px 22px 0;
+      position: absolute;
+
+
+     }
     background-color: #f2f2f2;
 
     @media (min-width: @tablet-width) {
@@ -57,5 +124,28 @@
     gap: 80px;
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+
+  &__description {
+    width: 227px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 23px;
+    position: relative;
+    display: block;
+    margin-bottom: 38px;
+
+
+    &::after {
+      content: "";
+      background: #D9D9D9;
+      width: 240px;
+      height: 1px;
+      bottom: -20px;
+      left: 0;
+      position: absolute;
+
+    }
   }
 }
