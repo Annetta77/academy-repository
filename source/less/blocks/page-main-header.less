@@ -1,13 +1,11 @@
 .page-main-header {
-
-  background-image: url("/../../img/index-background-mobile.jpg");
-
-  background-color: @basic-green;
+  min-width: 320px;
+  min-height: 480px;
+  background-color: #ffffff;
   line-height: 0;
   width: 320;
   height: 302;
-  background-blend-mode: overlay;
-  opacity: 0.85;
+  margin-bottom: 20px;
 
 
   font-family: Oswald;
@@ -15,17 +13,38 @@
   font-weight: 400;
   line-height: 14px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
 
-&__button {
+  &__button {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: @basic-green;
+    position: relative;
+    top: 150px;
+    min-width: 280px;
+    max-width: 320px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 0;
 
-  color: #FFFFFF;
-  text-decoration: none;
+
+
+  }
+
+  &__top {
+    width: 320px;
+    min-height: 302px;
+    background-image: url("/../../img/index-background-mobile.jpg");
+    position: relative;
+    background-size: 320px 302px;
+    background-repeat: no-repeat;
+    background-color: @basic-green;
+    background-blend-mode: overlay;
+    opacity: 0.85;
+  }
+
+  padding-top: 27px;
+
 }
-
-padding-top: 27px;
-margin-bottom: 20px;
-}
-
-

@@ -37,6 +37,21 @@
   margin: 0 auto;
   background-color: #ffffff;
 }
+.page-main {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.page-main__promo-img {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+.page-main__catalog {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
 .page-main__title {
   font-family: "oswald", sans-serif;
   font-size: 36px;
@@ -44,28 +59,50 @@
   line-height: 36px;
   text-align: center;
   text-transform: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
 }
 .page-main-header {
-  background-image: url("../img/index-background-mobile.jpg");
-  background-color: #68b738;
+  min-width: 320px;
+  min-height: 480px;
+  background-color: #ffffff;
   line-height: 0;
   width: 320;
   height: 302;
-  background-blend-mode: overlay;
-  opacity: 0.85;
+  margin-bottom: 20px;
   font-family: Oswald;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   padding-top: 27px;
-  margin-bottom: 20px;
 }
 .page-main-header__button {
-  color: #FFFFFF;
+  display: block;
+  color: #ffffff;
   text-decoration: none;
+  background-color: #68b738;
+  position: relative;
+  top: 150px;
+  min-width: 280px;
+  max-width: 320px;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.page-main-header__top {
+  width: 320px;
+  min-height: 302px;
+  background-image: url("../img/index-background-mobile.jpg");
+  position: relative;
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+  background-color: #68b738;
+  background-blend-mode: overlay;
+  opacity: 0.85;
 }
 .order-btn {
   background-color: #68b738;
@@ -354,13 +391,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.page-header {
-  min-width: 280px;
+.page-header__nav-cont {
   display: flex;
-  justify-content: space-around;
-}
-.page-header__logo-container {
-  display: inline-block;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 .page-header__menu {
   font-family: Oswald;
@@ -388,17 +423,34 @@
   }
 }
 .page-header__toggler {
-  background-image: url('../../img/btn-burger.svg');
+  background-image: url("../img/btn-burger.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 18px;
   background-color: transparent;
   border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
 }
-.page-header--active {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+.page-header__toggler--active {
+  background-image: url("../img/btn-close.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+}
+.page-header__logo-name {
+  margin-top: 25px;
+}
+.page-header__logo-img {
+  margin-top: 11px;
 }
 .page-main-catalog {
   margin-bottom: 20px;
@@ -545,6 +597,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.site-menu--hidden {
+  display: none;
+}
 .site-menu__link {
   color: #000000;
   text-decoration: none;
@@ -577,5 +632,8 @@
 }
 .page-footer-footer {
   background-color: #f2f2f2;
+}
+* {
+  box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
