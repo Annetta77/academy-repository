@@ -1,5 +1,14 @@
 .page-header {
 
+  min-width: 280px;
+display: flex;
+justify-content: space-around;
+
+
+&__logo-container {
+  display: inline-block;
+}
+
   &__menu {
 
     font-family: Oswald;
@@ -26,7 +35,29 @@ color: #000000;
     @media (min-width: @desctop-width) {
       display: flex;
       flex-wrap: nowrap;
-      
+
     }
   }
+
+  &__toggler {
+
+     background-image: url('../../img/btn-burger.svg');
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+     width: 40px;
+     height: 40px;
+     background-color: transparent;
+     border: none;
+
+
+  }
+
+    &--active {
+      background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+    }
+
+
 }

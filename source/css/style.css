@@ -26,6 +26,8 @@
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
 .page {
+  min-width: 280px;
+  padding: 0 20px;
   font-family: arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -352,6 +354,14 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.page-header {
+  min-width: 280px;
+  display: flex;
+  justify-content: space-around;
+}
+.page-header__logo-container {
+  display: inline-block;
+}
 .page-header__menu {
   font-family: Oswald;
   font-size: 20px;
@@ -376,6 +386,19 @@
     display: flex;
     flex-wrap: nowrap;
   }
+}
+.page-header__toggler {
+  background-image: url('../../img/btn-burger.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+.page-header--active {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
 .page-main-catalog {
   margin-bottom: 20px;
