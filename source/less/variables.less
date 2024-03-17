@@ -16,3 +16,24 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.switcher__toggler {
+  display: flex;
+  width: 86px;
+  height: 14px;
+  border: 1px solid #CDCDCD;
+  background-color: #ffffff;
+  border-radius: 6px;
+  position: relative;
+  margin: 8px 0;
+  &::after {
+    content: "";
+    width: 36px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: @basic-green;
+position: absolute;
+top: 3px;
+left: 5px;
+  }
+}

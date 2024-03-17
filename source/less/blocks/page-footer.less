@@ -1,7 +1,28 @@
 .page-footer {
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+&__location {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
   &__logo {
     margin-top: 39px;
+    margin-bottom: 32px;
+
   }
+
+&__developer {
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  height: 34px;
+  margin: 0 auto;
+}
 
   &__developer-link {
     font-family: Arial;
@@ -11,9 +32,15 @@
     text-align: left;
     color: #444444;
     text-decoration: none;
+    width: 114px;
+    height: 18px;
+    margin-top: 10px;
+
   }
 
   &__footer {
+height: 236px;
+text-align: center;
     @media (min-width: @tablet-width) {
       display: grid;
       grid-auto-flow: column;

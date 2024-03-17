@@ -1,12 +1,17 @@
 .page-main-example {
   background-color: #eaeaea;
-  padding-top: 25px;
+&__description {
+  padding-left: 20px;
+  width: 280px;
+  height: 108px;
+}
   &__title {
     font-family: Oswald;
     font-size: 36px;
     font-weight: 400;
     line-height: 40px;
     color: #000000;
+    padding-left: 20px;
   }
   &__list {
     text-align: center;
@@ -15,10 +20,20 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+    width: 280px;
+    position: relative;
+    margin-bottom: 20px;
 
     @media (min-width: @tablet-width) {
 
       display: grid;
+
 
 
     };
@@ -31,7 +46,22 @@
     font-weight: 400;
     line-height: 24px;
     color: #000000;
+    outline: 1px solid #CDCDCD;
+    width: 124px;
+    height: 56px;
+    padding-top: 15px;
+
   }
+
+  &__options {
+    padding: 0;
+    margin: 0;
+    outline: 10px solid transparent;
+    padding:  0 35px;
+    position: absolute;
+bottom: 10px;
+
+ }
 
   &__cost {
     font-family: Oswald;
@@ -39,7 +69,22 @@
     font-weight: 400;
     line-height: 20px;
     color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
   }
+
+&__before-img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-bottom: 15px;
+}
+
+
+&__after-img {
+  display: none;
+}
 
   &__btn,
   &__btn--active {
@@ -47,8 +92,22 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
+    border: none;
+    text-transform: uppercase;
   }
+
+  &__btn-toggler {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 210px;
+    height: 30px;
+    gap: 13px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+
 
   @media (min-width: @desctop-width) {
     display: grid;

@@ -45,7 +45,8 @@
     </header>
     <main class="page__main page-main">
       <section class="page-main__header page-main-header">
-       <div class="page-main-header__top"> <h1 class="page-main__title">Функциональное питание для котов</h1>
+        <div class="page-main-header__top">
+        <h1 class="page-main__title">Функциональное питание для котов</h1>
         <p>Занялся собой? Займись котом!</p>
       </div>
         <img
@@ -97,18 +98,23 @@
         </ol>
       </section>
       <section class="page-main__example page-main-example">
-       <div class="page-main-example__text"> <h2 class="page-main-example__title">Живой пример</h2>
-        <p>
+        <div class="page-main-example__text">
+        <h2 class="page-main-example__title">Живой пример</h2>
+        <p class="page-main-example__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="page-main-example__list">
-          <dt class="page-main-example__index">5 КГ</dt>
-          <dd>снижение веса</dd>
-          <dt class="page-main-example__index">60 ДНЕЙ</dt>
-          <dd>затрачено времени</dd>
-        </dl>
+        <ul class="page-main-example__list">
+        <li class="page-main-example__item">
+          <p class="page-main-example__index">5 КГ</p>
+          <p class="page-main-example__options">снижение <br> веса</p>
+        </li>
+          <li class="page-main-example__item">
+            <p class="page-main-example__index">60 ДНЕЙ</p>
+          <p class="page-main-example__options" >затрачено <br> времени</p>
+          </li>
+        </ul>
         <p class="page-main-example__cost">Затраты на питание: 15 000 РУБ.</p>
       </div>
 
@@ -127,8 +133,11 @@
           height="232"
           alt="кот стал"
         />
+       <div class="page-main-example__btn-toggler">
         <button class="page-main-example__btn--active">было</button>
+        <div class="switcher__toggler"></div>
         <button class="page-main-example__btn">стало</button>
+      </div>
       </div>
       </section>
     </main>
@@ -160,23 +169,24 @@
 
           <ul class="page-footer__social-list social-list">
             <li class="social-list__item">
-              <a class="social-list__link" href="#"
-                ><span class="visually-hidden">вконтакте</span></a
+              <a class="social-list__link social-list__link-vk" href="#"
+                > <img src="./img/icon_vkontakte.svg" width="23" height="16"> <span class="visually-hidden">вконтакте</span></a
               >
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#"
-                ><span class="visually-hidden">YouTube</span></a
+              <a class="social-list__link social-list__link-youtube" href="#"
+                ><img src="./img/icon_instagram.svg" width="16" height="16"> <span class="visually-hidden">Инстаграм</span></a
               >
             </li>
             <li class="social-list__item">
-              <a class="social-list__link" href="#"
-                ><span class="visually-hidden">Телеграм</span></a
+              <a class="social-list__link social-list__link-telegram" href="#"
+                ><img src="./img/icon_facebook.svg" width="22" height="22" ><span class="visually-hidden">Фейсбук</span></a
               >
             </li>
           </ul>
           <p>
-           <div class="page-footer__developer"> <a class="page-footer__developer-link" href="#">HTML Academy</a>
+            <div class="page-footer__developer">
+              <a class="page-footer__developer-link" href="#">HTML Academy</a>
           </p>
           <img
             class="page-footer__developer-img"

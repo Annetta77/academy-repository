@@ -11,6 +11,26 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.switcher__toggler {
+  display: flex;
+  width: 86px;
+  height: 14px;
+  border: 1px solid #CDCDCD;
+  background-color: #ffffff;
+  border-radius: 6px;
+  position: relative;
+  margin: 8px 0;
+}
+.switcher__toggler::after {
+  content: "";
+  width: 36px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: #68b738;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
 @font-face {
   font-family: "Oswald";
   font-weight: 400;
@@ -45,10 +65,16 @@
   align-items: center;
   margin-bottom: 20px;
 }
+.page-main__header {
+  position: relative;
+}
+.page-main__example {
+  min-width: 320px;
+}
 .page-main__promo-img {
   position: absolute;
-  top: 350px;
-  left: 50px;
+  top: 190px;
+  left: 20px;
 }
 .page-main__catalog {
   margin: 0;
@@ -367,7 +393,10 @@
   text-transform: none;
 }
 .page-footer-contacts {
-  margin-top: 26px;
+  width: 280px;
+  height: 112px;
+  margin: 0 auto;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -379,8 +408,26 @@
   color: #000000;
   text-transform: uppercase;
 }
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+.page-footer__location {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
 .page-footer__logo {
   margin-top: 39px;
+  margin-bottom: 32px;
+}
+.page-footer__developer {
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  height: 34px;
+  margin: 0 auto;
 }
 .page-footer__developer-link {
   font-family: Arial;
@@ -390,6 +437,13 @@
   text-align: left;
   color: #444444;
   text-decoration: none;
+  width: 114px;
+  height: 18px;
+  margin-top: 10px;
+}
+.page-footer__footer {
+  height: 236px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .page-footer__footer {
@@ -402,10 +456,11 @@
   min-width: 280px;
 }
 .page-header__nav-cont {
+  width: 320px;
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 .page-header__menu {
   font-family: Oswald;
@@ -707,7 +762,11 @@
 }
 .page-main-example {
   background-color: #eaeaea;
-  padding-top: 25px;
+}
+.page-main-example__description {
+  padding-left: 20px;
+  width: 280px;
+  height: 108px;
 }
 .page-main-example__title {
   font-family: Oswald;
@@ -715,6 +774,7 @@
   font-weight: 400;
   line-height: 40px;
   color: #000000;
+  padding-left: 20px;
 }
 .page-main-example__list {
   text-align: center;
@@ -723,6 +783,15 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  display: flex;
+  list-style: none;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  position: relative;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .page-main-example__list {
@@ -735,6 +804,18 @@
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+  outline: 1px solid #CDCDCD;
+  width: 124px;
+  height: 56px;
+  padding-top: 15px;
+}
+.page-main-example__options {
+  padding: 0;
+  margin: 0;
+  outline: 10px solid transparent;
+  padding: 0 35px;
+  position: absolute;
+  bottom: 10px;
 }
 .page-main-example__cost {
   font-family: Oswald;
@@ -742,6 +823,18 @@
   font-weight: 400;
   line-height: 20px;
   color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.page-main-example__before-img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-bottom: 15px;
+}
+.page-main-example__after-img {
+  display: none;
 }
 .page-main-example__btn,
 .page-main-example__btn--active {
@@ -749,7 +842,18 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
+  border: none;
+  text-transform: uppercase;
+}
+.page-main-example__btn-toggler {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  width: 210px;
+  height: 30px;
+  gap: 13px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 @media (min-width: 1440px) {
   .page-main-example {
@@ -768,6 +872,25 @@
   .site-menu {
     display: flex;
   }
+}
+.social-list {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+  margin: 0 auto;
+  padding: 0;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  width: 280px;
+  padding-top: 20px;
+  padding-bottom: 21px;
+}
+.social-list__link-vk {
+  background-image: url("../../img/icon_vkontakte.svg");
+  width: 23px;
+  height: 16px;
 }
 .form__group {
   border: none;
