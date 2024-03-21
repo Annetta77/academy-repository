@@ -2,15 +2,58 @@
   width: 280px;
   height: 112px;
   margin: 0 auto;
-padding: 0;
-&__invite {
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  &__invite {
     font-family: Oswald;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     color: #000000;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-family: Oswald;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: left;
+      width: 172px;
+      height: 83px;
+      margin: 0;
+      padding: 0;
+    }
   }
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  &__address {
+    br {
+      display: none;
+    }
+    @media (min-width: @tablet-width) {
+      br {
+        display: block;
+      }
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: right;
+      color: #444444;
+      width: 160px;
+      height: 80px;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }

@@ -1,22 +1,39 @@
 .site-menu {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 42px;
 
-&--hidden {
-  display: none;
-}
+  &--hidden {
+    display: none;
+  }
+
+  &__item {
+    white-space: nowrap;
+    &--active {
+      @media (min-width: @tablet-width) {
+        border-bottom: 2px solid #68b738;
+
+      }
+    }
+  }
 
   &__link {
-
     color: #000000;
     text-decoration: none;
-
   }
 
   @media (min-width: @tablet-width) {
-display: flex;
-
-
-
+    display: flex;
+    width: 440px;
+    height: 36px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    font-family: Oswald;
+    font-weight: 400;
+    font-style: 18px;
+    line-height: 24px;
   }
-
-
 }

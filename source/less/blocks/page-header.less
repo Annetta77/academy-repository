@@ -13,19 +13,26 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
-    text-align: center;
     text-decoration: none;
     list-style: none;
     list-style-type: none;
     text-transform: uppercase;
     color: #000000;
+
+    @media (min-width: @tablet-width) {
+    }
   }
 
   &__nav {
     @media (min-width: @tablet-width) {
       display: flex;
       flex-wrap: nowrap;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      width: 708px;
+
+
     }
 
     @media (min-width: @desctop-width) {
@@ -47,27 +54,48 @@
     margin-top: 25px;
 
     &--active {
-     background-image: url("./../img/btn-close.svg");
-     background-repeat: no-repeat;
-     background-position: 50% 50%;
-     width: 25px;
-     height: 25px;
-     background-color: transparent;
-     border: none;
-     padding: 0;
-    margin: 0;
-    margin-top: 25px;
-
+      background-image: url("./../img/btn-close.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      width: 25px;
+      height: 25px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 25px;
     }
 
-  }
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
 
+    @media (min-width: @desctop-width) {
+      display: none;
+    }
+  }
 
   &__logo-name {
     margin-top: 25px;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   &__logo-img {
     margin-top: 11px;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &__logo-tablet {
+    display: none;
+    @media (min-width: @tablet-width) {
+      display: block;
+      margin: 0;
+      padding: 0;
+      margin-top: 24px;
+    }
   }
 }

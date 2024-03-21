@@ -5,6 +5,14 @@
   margin-bottom: 49px;
   width: 320px;
   height: 380px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 700px;
+margin-bottom: 43px;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
   &__title {
     font-family: Oswald;
     font-size: 36px;
@@ -12,6 +20,18 @@
     line-height: 40px;
     color: #000000;
     margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+      font-family: Oswald;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 60px;
+      width: 375px;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 32px;
+    }
   }
 
   &__list {
@@ -20,7 +40,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-
 
     @media (min-width: @tablet-width) {
       display: grid;
@@ -35,9 +54,18 @@
     }
   }
 
+&__item-text {
+
+  @media (min-width: @tablet-width) {
+    display: block;
+margin-top: 151px;
+z-index: 1;
+  }
+}
+
+
   &__item {
     width: 320px;
-
     margin-bottom: 20px;
 
     &--leaf {
@@ -49,19 +77,70 @@
         content: "";
         width: 60px;
         height: 60px;
-        display: block;
+        display: inline-block;
         background-image: url("./../img/Group-1.svg");
         background-repeat: no-repeat;
         position: absolute;
-       left: 0;
+        left: 0;
+        @media (min-width: @tablet-width) {
+          display: none;
+        }
       }
+
+      @media (min-width: @tablet-width) {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #444444;
+        width: 230px;
+        height: 280px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+
+
+
+
+
+        &::before {
+          content: "";
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+          background-image: url("./../img/Group-1.svg");
+          background-repeat: no-repeat;
+          position: absolute;
+          background-size: cover;
+          position: absolute;
+          top: 40px;
+        }
+
+        &::after {
+          content: "1";
+          font-family: Oswald;
+          font-size: 280px;
+          font-weight: 400;
+          line-height: 280px;
+          text-align: center;
+          color: #f2f2f2;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -1;
+
+        }
+      }
+
+
     }
 
     &--powder {
       width: 198px;
       height: 54px;
       margin-left: 40px;
-
 
       &::before {
         content: "";
@@ -73,13 +152,53 @@
         position: absolute;
         left: 0;
       }
+
+      @media (min-width: @tablet-width) {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #444444;
+        width: 246px;
+        height: 280px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+          background-image: url("./../img/Group-2.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          top: 40px;
+
+        }
+
+        &::after {
+          content: "2";
+          font-family: Oswald;
+          font-size: 280px;
+          font-weight: 400;
+          line-height: 280px;
+          text-align: center;
+          color: #f2f2f2;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -1;
+        }
+      }
     }
 
     &--nutrition {
       width: 183px;
       height: 54px;
       margin-left: 40px;
-
 
       &::before {
         content: "";
@@ -89,8 +208,49 @@
         background-image: url("./../img/Group-3.svg");
         background-repeat: no-repeat;
         position: absolute;
-        left: 0
-        ;
+        left: 0;
+      }
+
+      @media (min-width: @tablet-width) {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #444444;
+        width: 247px;
+        height: 280px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+
+        &::before {
+          content: "";
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+          background-image: url("./../img/Group-3.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          top: 40px;
+
+        }
+
+        &::after {
+          content: "3";
+          font-family: Oswald;
+          font-size: 280px;
+          font-weight: 400;
+          line-height: 280px;
+          text-align: center;
+          color: #f2f2f2;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -1;
+        }
       }
     }
 
@@ -98,7 +258,6 @@
       width: 199px;
       height: 54px;
       margin-left: 40px;
-
 
       &::before {
         content: "";
@@ -110,13 +269,59 @@
         position: absolute;
         left: 0;
       }
-      margin-bottom: 0;
-    }
 
-    @media (min-width: @tablet-width) {
-      width: 280px;
-      margin-bottom: 37px;
-      position: relative;
+      @media (min-width: @mobile-width-only) {
+br {
+  display: none;
+}
+      }
+
+      @media (min-width: @tablet-width) {
+        br {display: block;}
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #444444;
+        width: 249px;
+        height: 280px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+
+        &::before {
+          content: "";
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+          background-image: url("./../img/Group-4.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          top: 40px;
+
+        }
+
+        &::after {
+          content: "4";
+          font-family: Oswald;
+          font-size: 280px;
+          font-weight: 400;
+          line-height: 280px;
+          text-align: center;
+          color: #f2f2f2;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: -1;
+        }
+      }
+
+      margin-bottom: 0;
+      padding-bottom: 0;
+
     }
   }
 }

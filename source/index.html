@@ -10,24 +10,31 @@
     <header class="page__header page-header">
       <nav class="page-header__nav">
         <div class="page-header__nav-cont">
-        <img
-          class="page-header__logo-img logo"
-          src="./img/logo-mobile.svg"
-          width="34"
-          height="38"
-          alt="Логотип CAT ENERGY"
-        />
-        <img
-          class=" page-header__logo-name"
-          src="./img/logo-2.svg"
-          width="101"
-          height="18"
-          alt="Cat energy"
-        />
-        <button class="page-header__toggler">
-          <span class="visually-hidden">Меню</span>
-        </button>
-      </div>
+          <img
+            class="page-header__logo-img logo"
+            src="./img/logo-mobile.svg"
+            width="34"
+            height="38"
+            alt="Логотип CAT ENERGY"
+          />
+          <img
+            class="page-header__logo-name"
+            src="./img/logo-2.svg"
+            width="101"
+            height="18"
+            alt="Cat energy"
+          />
+          <img
+            class="page-header__logo-tablet"
+            src="./img/logo-tablet.png"
+            width="174"
+            height="52"
+            alt="Cat energy"
+          />
+          <button class="page-header__toggler">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </div>
         <ul class="page-header__menu site-menu">
           <li class="site-menu__item site-menu__item--active">
             <a class="site-menu__link">Главная</a>
@@ -46,20 +53,27 @@
     <main class="page__main page-main">
       <section class="page-main__header page-main-header">
         <div class="page-main-header__top">
-        <h1 class="page-main__title">Функциональное питание для котов</h1>
-        <p>Занялся собой? Займись котом!</p>
-      </div>
+          <h1 class="page-main__title">Функциональное питание для котов</h1>
+          <p>Занялся собой? Займись котом!</p>
+        </div>
         <img
-          class="page-main__promo-img"
+          class="page-main__promo-img page-main__promo-img-mobile"
           src="./img/index-can-mobile.png"
           width="280"
           height="270"
           alt="Cat energy PRO со вкусом курицы"
         />
         <a class="page-main-header__button" href="#">подобрать программу</a>
+        <img
+          class="page-main__promo-img page-main__promo-img-tablet"
+          src="./img/index-can-tablet.png"
+          width="709"
+          height="609"
+          alt="Cat energy PRO со вкусом курицы"
+        />
       </section>
       <section class="page-main__catalog page-main-catalog">
-        <article class="page-main-catalog__slim">
+        <article class="page-main-catalog__slim page-main-catalog__list">
           <h3 class="page-main-catalog__title">Похудение</h3>
           <p class="page-main-catalog__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -68,7 +82,7 @@
           </p>
           <a class="page-main-catalog__link" href="#">каталог slim</a>
         </article>
-        <article class="page-main-catalog__pro">
+        <article class="page-main-catalog__pro page-main-catalog__list">
           <h3 class="page-main-catalog__title">Набор массы</h3>
           <p class="page-main-catalog__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -81,64 +95,98 @@
       <section class="page-main__description page-main-description">
         <h2 class="page-main-description__title">Как это работает</h2>
         <ol class="page-main-description__list">
-          <li class="page-main-description__item page-main-description__item--leaf">
-            Функциональное питание содержит только полезные питательные
-            вещества.
+          <li
+            class="page-main-description__item page-main-description__item--leaf"
+          >
+            <span class="page-main-description__item-text">
+              Функциональное питание содержит только полезные питательные
+              вещества.</span
+            >
           </li>
-          <li class="page-main-description__item page-main-description__item--powder">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и
-            готово.
+          <li
+            class="page-main-description__item page-main-description__item--powder"
+          >
+            <span class="page-main-description__item-text"
+              >Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.</span
+            >
           </li>
-          <li class="page-main-description__item page-main-description__item--nutrition">
-            Замените один-два приема обычной еды на наше функциональное питание.
+          <li
+            class="page-main-description__item page-main-description__item--nutrition"
+          >
+            <span class="page-main-description__item-text">
+              Замените один-два приема обычной еды на наше функциональное
+              питание.</span
+            >
           </li>
-          <li class="page-main-description__item page-main-description__item--changes">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          <li
+            class="page-main-description__item page-main-description__item--changes"
+          >
+            <span class="page-main-description__item-text">
+              Уже через месяц наслаждайтесь изменениями к лучшему <br />
+              вашего питомца!</span
+            >
           </li>
         </ol>
       </section>
       <section class="page-main__example page-main-example">
         <div class="page-main-example__text">
-        <h2 class="page-main-example__title">Живой пример</h2>
-        <p class="page-main-example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <ul class="page-main-example__list">
-        <li class="page-main-example__item">
-          <p class="page-main-example__index">5 КГ</p>
-          <p class="page-main-example__options">снижение <br> веса</p>
-        </li>
-          <li class="page-main-example__item">
-            <p class="page-main-example__index">60 ДНЕЙ</p>
-          <p class="page-main-example__options" >затрачено <br> времени</p>
-          </li>
-        </ul>
-        <p class="page-main-example__cost">Затраты на питание: 15 000 РУБ.</p>
-      </div>
-
-      <div class="page-main-example__img">
-        <img
-          class="page-main-example__before-img"
-          src="./img/before.png"
-          width="280"
-          height="232"
-          alt="кот был"
-        />
-        <img
-          class="page-main-example__after-img"
-          src="./img/after.png"
-          width="280"
-          height="232"
-          alt="кот стал"
-        />
-       <div class="page-main-example__btn-toggler">
-        <button class="page-main-example__btn--active">было</button>
-        <div class="switcher__toggler"></div>
-        <button class="page-main-example__btn">стало</button>
-      </div>
-      </div>
+          <h2 class="page-main-example__title">Живой пример</h2>
+          <p class="page-main-example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
+          </p>
+          <div class="page-main-example__list-cost">
+            <ul class="page-main-example__list">
+              <li class="page-main-example__item">
+                <p class="page-main-example__index">5 КГ</p>
+                <p class="page-main-example__options">
+                  снижение <br />
+                  веса
+                </p>
+              </li>
+              <li class="page-main-example__item">
+                <p class="page-main-example__index">60 ДНЕЙ</p>
+                <p class="page-main-example__options">
+                  затрачено <br />
+                  времени
+                </p>
+              </li>
+            </ul>
+            <p class="page-main-example__cost">
+              Затраты на питание: 15 000 РУБ.
+            </p>
+          </div>
+        </div>
+        <div class="page-main-example__cont">
+          <div class="page-main-example__img">
+            <div class="page-main-example__before-cont">
+              <img
+                class="page-main-example__before-img"
+                src="./img/before.png"
+                width="280"
+                height="232"
+                alt="кот был"
+              />
+            </div>
+            <div class="page-main-example__after-cont">
+              <img
+                class="page-main-example__after-img"
+                src="./img/after.png"
+                width="280"
+                height="232"
+                alt="кот стал"
+              />
+            </div>
+          </div>
+          <div class="page-main-example__btn-toggler">
+            <button class="page-main-example__btn--active">было</button>
+            <div class="switcher__toggler"></div>
+            <button class="page-main-example__btn">стало</button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page__footer page-footer">
@@ -148,54 +196,76 @@
             приглашаем к сотрудничеству дилеров!
           </p>
           <p class="page-footer-contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <br /><br />
+            Санкт-Петербург
           </p>
         </div>
-        <img
-          class="page-footer__location"
-          src="./img/location.jpg"
-          width="320"
-          height="362"
-          alt="Мы на карте"
-        />
-        <div class="page-footer__footer page-footer-footer">
+        <div class="page-footer__location-img">
           <img
-            class="page-footer__logo logo"
-            src="./img/logo-2.svg"
-            width="128"
-            height="24"
-            alt="Cat energy"
+            class="page-footer__location"
+            src="./img/location.jpg"
+            width="320"
+            height="362"
+            alt="Мы на карте"
           />
+        </div>
+        <div class="page-footer__footer page-footer-footer">
+          <div class="page-footer__footer-cont">
+            <img
+              class="page-footer__logo logo"
+              src="./img/logo-2.svg"
+              width="128"
+              height="24"
+              alt="Cat energy"
+            />
 
-          <ul class="page-footer__social-list social-list">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link-vk" href="#"
-                > <img src="./img/icon_vkontakte.svg" width="23" height="16"> <span class="visually-hidden">вконтакте</span></a
-              >
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link-youtube" href="#"
-                ><img src="./img/icon_instagram.svg" width="16" height="16"> <span class="visually-hidden">Инстаграм</span></a
-              >
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link-telegram" href="#"
-                ><img src="./img/icon_facebook.svg" width="22" height="22" ><span class="visually-hidden">Фейсбук</span></a
-              >
-            </li>
-          </ul>
-          <p>
+            <ul class="page-footer__social-list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link-vk" href="#">
+                  <img
+                    src="./img/icon_vkontakte.svg"
+                    width="23"
+                    height="16"
+                    alt="логотип вконтакте"
+                  />
+                  <span class="visually-hidden">вконтакте</span></a
+                >
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link-youtube" href="#"
+                  ><img
+                    src="./img/icon_instagram.svg"
+                    width="16"
+                    height="16"
+                    alt="логотип Инстаграм"
+                  />
+                  <span class="visually-hidden">Инстаграм</span></a
+                >
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link-telegram" href="#"
+                  ><img
+                    src="./img/icon_facebook.svg"
+                    width="22"
+                    height="22"
+                    alt="логотип Фейсбук"
+                  /><span class="visually-hidden">Фейсбук</span></a
+                >
+              </li>
+            </ul>
+
             <div class="page-footer__developer">
               <a class="page-footer__developer-link" href="#">HTML Academy</a>
-          </p>
-          <img
-            class="page-footer__developer-img"
-            src="./img/logo-html.svg"
-            width="27"
-            height="34"
-            alt="Логотип HTML Academy"
-          />
-        </div>
+
+              <img
+                class="page-footer__developer-img"
+                src="./img/logo-html.svg"
+                width="27"
+                height="34"
+                alt="Логотип HTML Academy"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </footer>

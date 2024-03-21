@@ -1,11 +1,9 @@
 .page-main-catalog {
   margin-bottom: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
   &__title {
     font-family: Oswald;
     font-size: 24px;
@@ -21,8 +19,15 @@ align-items: center;
     margin-left: 91px;
     margin-bottom: 29px;
 
-
-
+    @media (min-width: @tablet-width) {
+      font-family: Oswald;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+      margin-left: 0;
+      padding: 0;
+    }
   }
 
   &__link {
@@ -36,6 +41,8 @@ align-items: center;
     text-transform: uppercase;
     position: relative;
 
+    @media (min-width: @tablet-width) {
+    }
 
     &::after {
       content: "";
@@ -48,41 +55,57 @@ align-items: center;
       position: absolute;
       left: 100px;
       bottom: 5px;
-
-
     }
   }
 
   &__slim {
-min-width: 320px;
-height: 266px;
-margin-top: 20px;
-padding-top: 20px;
-padding-left: 22px;
-position: relative;
-   &::before {
-    content: "";
-    width: 50px;
-    height: 53px;
-    display:inline-block;
-    background-image: url("./../img/cat_slim.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0 7px 22px 0;
-position: absolute;
-top: 21px;
-   }
-    margin-bottom: 20px;
+    min-width: 320px;
+    height: 266px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 22px;
+    position: relative;
     background-color: #f2f2f2;
 
-    @media (min-width: @tablet-width) {
-      margin-bottom: 30;
-      width: 708px;
+    @media (min-width: @mobile-width-only) {
+      &::before {
+        content: "";
+        width: 50px;
+        height: 53px;
+        display: inline-block;
+        background-image: url("./../img/cat_slim.svg");
+        background-repeat: no-repeat;
+        padding: 0 7px 22px 0;
+        position: absolute;
+        top: 21px;
+      }
     }
 
-    @media (min-width: @desctop-width) {
-      width: 570px;
+    @media (min-width: @tablet-width) {
+      &::before {
+        content: "";
+        width: 200px;
+        height: 211px;
+        display: inline-block;
+        background-size: contain;
+        background-image: url("./../img/cat_slim.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 62px;
+      }
     }
+  }
+
+  margin-bottom: 20px;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    width: 708px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 570px;
   }
 
   &__pro {
@@ -96,19 +119,29 @@ top: 21px;
       content: "";
       width: 67px;
       height: 50px;
-      display:inline-block;
+      display: inline-block;
       background-image: url("./../img/cat_pro.svg");
       background-repeat: no-repeat;
       background-position: center;
       padding: 0 7px 22px 0;
       position: absolute;
-
-
-     }
+    }
     background-color: #f2f2f2;
 
     @media (min-width: @tablet-width) {
-      width: 708px;
+      @media (min-width: @tablet-width) {
+        &::before {
+          content: "";
+          width: 268px;
+          height: 200px;
+          display: inline-block;
+          background-size: contain;
+          background-image: url("./../img/cat_pro.svg");
+          background-repeat: no-repeat;
+          position: absolute;
+          right: 62px;
+        }
+      }
     }
 
     @media (min-width: @desctop-width) {
@@ -116,7 +149,12 @@ top: 21px;
     }
   }
 
-
+  &__list {
+    @media (min-width: @tablet-width) {
+      width: 708px;
+      height: 372px;
+    }
+  }
 
   @media (min-width: @desctop-width) {
     display: flex;
@@ -136,16 +174,31 @@ top: 21px;
     display: block;
     margin-bottom: 38px;
 
-
     &::after {
       content: "";
-      background: #D9D9D9;
+      background: #d9d9d9;
       width: 240px;
       height: 1px;
       bottom: -20px;
       left: 0;
       position: absolute;
-
+      @media (min-width: 240px) {
+        display: none;
+      }
+    }
+    @media (min-width: @tablet-width) {
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: #000000;
+      width: 340px;
+      height: 96px;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 48px;
     }
   }
+  gap: 30px;
 }
