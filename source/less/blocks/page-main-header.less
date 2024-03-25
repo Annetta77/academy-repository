@@ -48,18 +48,23 @@
       left: 120px;
       top: 260px;
     }
+    @media (min-width: @desctop-width) {
+margin: 0;
+margin-left: 80px;
+    }
   }
 
   &__top {
     width: 320px;
     min-height: 302px;
-    background-image: url("/../../img/index-background-mobile.jpg");
+    background-image: url("./../img/index-background-mobile.jpg");
     position: relative;
     background-size: 320px 302px;
     background-repeat: no-repeat;
     background-color: @basic-green;
     background-blend-mode: overlay;
     opacity: 0.85;
+    object-fit: fill;
 
     @media (min-width: @tablet-width) {
       background-image: none;
@@ -75,7 +80,38 @@
       padding: 0;
       margin-left: 117px;
     }
+
+    @media (min-width: @desctop-width) {
+      margin: 0 auto;
+      width: 1440px;
+      height: 550px;
+      margin-bottom: 0;
+    }
+
+    &::after {
+      @media (min-width: @desctop-width) {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -200px;
+        bottom: 0;
+        left: 50%;
+        z-index: -2;
+        background-color: @basic-green;
+        background-blend-mode: overlay;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        background-image: url("./../img/index-background-desktop.jpg");
+      }
+    }
   }
+
+&__text {
+  @media (min-width: @desctop-width) {
+margin: 0;
+margin-left: 190px;
+  }
+}
 
   padding-top: 27px;
 }

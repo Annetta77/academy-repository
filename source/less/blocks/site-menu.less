@@ -14,14 +14,21 @@
     &--active {
       @media (min-width: @tablet-width) {
         border-bottom: 2px solid #68b738;
-
+      }
+      @media (min-width: @desctop-width) {
+        border-bottom: 2px solid #ffffff;
       }
     }
   }
 
   &__link {
-    color: #000000;
     text-decoration: none;
+    color: #000000;
+
+    @media (min-width: @desctop-width) {
+      color: #Ffffff;
+    }
+
   }
 
   @media (min-width: @tablet-width) {
@@ -35,5 +42,21 @@
     font-weight: 400;
     font-style: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 478px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    column-gap: 32px;
+    margin-top: 69px;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.64px;
+    text-align: left;
+    color: #ffffff;
+    z-index: 1;
   }
 }

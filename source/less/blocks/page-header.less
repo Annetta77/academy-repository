@@ -1,11 +1,29 @@
 .page-header {
   min-width: 280px;
+
+  @media (min-width: @desctop-width) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 auto;
+  }
+
   &__nav-cont {
     width: 320px;
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin: 0 auto;
+
+    @media (min-width: @desctop-width) {
+      margin: 0;
+      padding: 0;
+      display: block;
+      width: 202px;
+      height: 59px;
+      margin-top: 53px;
+    }
   }
 
   &__menu {
@@ -18,8 +36,21 @@
     list-style-type: none;
     text-transform: uppercase;
     color: #000000;
+    width: 280px;
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desctop-width) {
+      width: 478px;
+      height: 40px;
+      padding: 0;
+      margin: 0;
+      column-gap: 32px;
+      margin-top: 69px;
+      font-family: Oswald;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 29.64px;
+      text-align: left;
+      color: #ffffff;
     }
   }
 
@@ -31,13 +62,14 @@
       padding: 0;
       margin: 0;
       width: 708px;
-
-
     }
 
     @media (min-width: @desctop-width) {
       display: flex;
       flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 1220px;
+      margin: 0 auto;
     }
   }
 
@@ -87,6 +119,10 @@
     @media (min-width: @tablet-width) {
       display: none;
     }
+
+    @media (min-width: @desctop-width) {
+      display: none;
+    }
   }
 
   &__logo-tablet {
@@ -96,6 +132,20 @@
       margin: 0;
       padding: 0;
       margin-top: 24px;
+    }
+    @media (min-width: @desctop-width) {
+      display: none;
+    }
+  }
+
+  &__logo-desctop {
+    display: none;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desctop-width) {
+      display: block;
     }
   }
 }

@@ -7,11 +7,11 @@
   height: 380px;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 768px;
     height: 700px;
-margin-bottom: 43px;
-    border-bottom: 1px solid #E6E6E6;
-  }
+    margin-bottom: 43px;
+    border-bottom: 1px solid #e6e6e6;
+}
 
   &__title {
     font-family: Oswald;
@@ -42,10 +42,12 @@ margin-bottom: 43px;
     position: relative;
 
     @media (min-width: @tablet-width) {
+      width: 768px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-    }
+
+  }
 
     @media (min-width: @desctop-width) {
       display: flex;
@@ -54,15 +56,13 @@ margin-bottom: 43px;
     }
   }
 
-&__item-text {
-
-  @media (min-width: @tablet-width) {
-    display: block;
-margin-top: 151px;
-z-index: 1;
+  &__item-text {
+    @media (min-width: @tablet-width) {
+      display: block;
+      margin-top: 151px;
+      z-index: 1;
+    }
   }
-}
-
 
   &__item {
     width: 320px;
@@ -100,11 +100,6 @@ z-index: 1;
         margin: 0;
         position: relative;
 
-
-
-
-
-
         &::before {
           content: "";
           width: 80px;
@@ -130,11 +125,8 @@ z-index: 1;
           top: 0;
           right: 0;
           z-index: -1;
-
         }
       }
-
-
     }
 
     &--powder {
@@ -176,7 +168,6 @@ z-index: 1;
           background-size: cover;
           position: absolute;
           top: 40px;
-
         }
 
         &::after {
@@ -224,7 +215,6 @@ z-index: 1;
         padding: 0;
         position: relative;
 
-
         &::before {
           content: "";
           width: 80px;
@@ -235,7 +225,6 @@ z-index: 1;
           background-size: cover;
           position: absolute;
           top: 40px;
-
         }
 
         &::after {
@@ -271,13 +260,15 @@ z-index: 1;
       }
 
       @media (min-width: @mobile-width-only) {
-br {
-  display: none;
-}
+        br {
+          display: none;
+        }
       }
 
       @media (min-width: @tablet-width) {
-        br {display: block;}
+        br {
+          display: block;
+        }
         font-family: Arial;
         font-size: 16px;
         font-weight: 400;
@@ -290,7 +281,6 @@ br {
         padding: 0;
         position: relative;
 
-
         &::before {
           content: "";
           width: 80px;
@@ -301,7 +291,6 @@ br {
           background-size: cover;
           position: absolute;
           top: 40px;
-
         }
 
         &::after {
@@ -321,7 +310,6 @@ br {
 
       margin-bottom: 0;
       padding-bottom: 0;
-
     }
   }
 }
