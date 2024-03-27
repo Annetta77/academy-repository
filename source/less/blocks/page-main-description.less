@@ -13,6 +13,12 @@
     border-bottom: 1px solid #e6e6e6;
 }
 
+@media (min-width: @desctop-width) {
+width: 1220px;
+height: 400px;
+border: none;
+}
+
   &__title {
     font-family: Oswald;
     font-size: 36px;
@@ -50,9 +56,11 @@
   }
 
     @media (min-width: @desctop-width) {
+width: 1220px;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      margin-left: 0;
+      padding-left: 0;
     }
   }
 
@@ -127,6 +135,10 @@
           z-index: -1;
         }
       }
+      @media (min-width: @desctop-width) {
+        margin-right: 94px;
+        margin-left: 0;
+      }
     }
 
     &--powder {
@@ -184,6 +196,10 @@
           z-index: -1;
         }
       }
+
+      @media (min-width: @desctop-width) {
+        margin-right: 79px;
+      }
     }
 
     &--nutrition {
@@ -240,6 +256,10 @@
           right: 0;
           z-index: -1;
         }
+      }
+
+      @media (min-width: @desctop-width) {
+        margin-right: 77px;
       }
     }
 

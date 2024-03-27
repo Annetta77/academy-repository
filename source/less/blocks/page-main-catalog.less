@@ -28,6 +28,10 @@
       margin-left: 0;
       padding: 0;
     }
+    @media (min-width: @desctop-width) {
+      margin-bottom: 73px;
+      margin-top: 77px;
+    }
   }
 
   &__link {
@@ -41,8 +45,9 @@
     text-transform: uppercase;
     position: relative;
 
-    @media (min-width: @tablet-width) {
-    }
+    @media (min-width: @desctop-width) {
+      margin-left: -380px;
+ }
 
     &::after {
       content: "";
@@ -93,6 +98,28 @@
         position: absolute;
         right: 62px;
       }
+    }
+
+    @media (min-width: @desctop-width) {
+      &::before {
+        content: "";
+        width: 100px;
+        height: 106px;
+        display: inline-block;
+        background-image: url("./../img/cat_slim.svg");
+        background-repeat: no-repeat;
+        padding: 0;
+        position: absolute;
+        top: 21px;
+        left: 0;
+        padding: 0;
+        padding-top: 0;
+        margin: 0;
+        margin-top: 41px;
+        margin-left: 52px;
+      }
+
+      margin-top: 0;
     }
   }
 
@@ -146,6 +173,27 @@
 
     @media (min-width: @desctop-width) {
       width: 570px;
+
+
+        &::before {
+          content: "";
+          width: 134px;
+          height: 100px;
+          display: inline-block;
+          background-image: url("./../img/cat_pro.svg");
+          background-repeat: no-repeat;
+          padding: 0;
+          position: absolute;
+          top: 21px;
+          left: 0;
+          padding: 0;
+          padding-top: 0;
+          margin: 0;
+          margin-top: 47px;
+          margin-left: 33px;
+        }
+
+
     }
   }
 
@@ -156,8 +204,11 @@
     }
 
     @media (min-width: @desctop-width) {
-width: 570px;
-height: 374px;
+      width: 570px;
+      height: 374px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -167,6 +218,7 @@ height: 374px;
     gap: 80px;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-bottom: 71px;
   }
 
   &__description {
@@ -204,6 +256,19 @@ height: 374px;
       padding: 0;
       margin-bottom: 48px;
     }
+
+    @media (min-width: @desctop-width) {
+      width: 457px;
+      height: 72px;
+      margin-bottom: 23px;
+    }
   }
-  gap: 30px;
+
+  &__description:last-of-type {
+    @media (min-width: @desctop-width) {
+      width: 467px;
+      height: 72px;
+    }
+  }
+ column-gap: 30px;
 }
